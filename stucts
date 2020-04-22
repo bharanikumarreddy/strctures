@@ -1,0 +1,34 @@
+/*C program to read and print employee's record using structure*/
+ 
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char name[30];
+    char empId[30];
+    float salary;
+    char dep[30];
+};
+ 
+int main()
+{
+    struct employee emp;
+    for(int i=0;i<21;i++)
+     {
+    printf("\nEnter details :\n");
+    printf("Name ?:");         
+    gets(emp.name);
+    printf("ID ?:");           
+    scanf("%s",&emp.empId);
+    printf("Salary ?:");       
+    scanf("%f",&emp.salary);
+    printf("depatment?");
+    scanf("%s",&emp.dep)
+    printf("\nEntered detail is:");
+    printf("Name: %s",emp.name);
+    printf("Id: %s",emp.empId);
+    printf("Salary: %f\n",emp.salary);
+    printf("dept:%s",emp.dep)
+     }
+    return 0;
+}
